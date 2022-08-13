@@ -1,0 +1,142 @@
+ 
+                             Library Compiler (TM)
+                                 DesignWare (R)
+
+             Version S-2021.06-SP5 for linux64 - Jan 14, 2022 -SLE
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Initializing...
+lc_shell> pwd
+/home/devipriya/VSDBabySoC/src/lib
+lc_shell> read_lib avsddac.lib
+Reading '/home/devipriya/VSDBabySoC/src/lib/avsddac.lib' ...
+Warning: Line 27, Cell 'avsddac', The 'area' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_output_pin_rise_res' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_inout_pin_fall_res' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_inout_pin_rise_res' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_fanout_load' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_slope_rise' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_output_pin_fall_res' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_intrinsic_rise' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_slope_fall' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_intrinsic_fall' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_inout_pin_cap' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_input_pin_cap' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_output_pin_cap' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 28, Cell 'avsddac', pin 'OUT', The 'OUT' Pin/bus on the 'avsddac' cell has no 'function' attribute.
+        The cell becomes a black box. (LIBG-16)
+Technology library 'avsddac' read successfully
+1
+lc_shell> write_lib avsddac -f db -o avsddac.db
+Wrote the 'avsddac' library to '/home/devipriya/VSDBabySoC/src/lib/avsddac.db' successfully
+1
+lc_shell> read_lib avsdpll.lib
+Reading '/home/devipriya/VSDBabySoC/src/lib/avsdpll.lib' ...
+Error: Line 54, Cell 'avsdpll', The '//pin' attribute/group name cannot be specified here. (LBDB-76)
+Error: Line 58, Cell 'avsdpll', /home/devipriya/VSDBabySoC/src/lib/avsdpll.lib: syntax error on line 58 at or near '}'. (PARSE-1)
+Error: Line 66, Cell 'avsdpll', The '//pin' attribute/group name cannot be specified here. (LBDB-76)
+Error: Line 70, Cell 'avsdpll', /home/devipriya/VSDBabySoC/src/lib/avsdpll.lib: syntax error on line 70 at or near '}'. (PARSE-1)
+Error: Line 72, Cell 'avsdpll', The '//pin' attribute/group name cannot be specified here. (LBDB-76)
+Error: Line 76, Cell 'avsdpll', /home/devipriya/VSDBabySoC/src/lib/avsdpll.lib: syntax error on line 76 at or near '}'. (PARSE-1)
+Warning: Line 18, Cell 'avsdpll', The 'area' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_output_pin_rise_res' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_inout_pin_fall_res' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_inout_pin_rise_res' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_fanout_load' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_slope_rise' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_output_pin_fall_res' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_intrinsic_rise' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_slope_fall' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_intrinsic_fall' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_inout_pin_cap' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_input_pin_cap' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_output_pin_cap' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 19, Cell 'avsdpll', pin 'CLK', The 'CLK' Pin/bus on the 'avsdpll' cell has no 'function' attribute.
+        The cell becomes a black box. (LIBG-16)
+0
+lc_shell> write_lib avsdpll -f db -o avsdpll.db
+Warning: The 'avsdpll' library has not been read in yet. (UIL-3)
+0
+lc_shell> read_lib avsdpll.lib
+Reading '/home/devipriya/VSDBabySoC/src/lib/avsdpll.lib' ...
+Warning: Line 18, Cell 'avsdpll', The 'area' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_output_pin_rise_res' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_inout_pin_fall_res' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_inout_pin_rise_res' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_fanout_load' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_slope_rise' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_output_pin_fall_res' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_intrinsic_rise' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_slope_fall' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'default_intrinsic_fall' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_inout_pin_cap' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_input_pin_cap' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_output_pin_cap' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 19, Cell 'avsdpll', pin 'CLK', The 'CLK' Pin/bus on the 'avsdpll' cell has no 'function' attribute.
+        The cell becomes a black box. (LIBG-16)
+Technology library 'avsdpll' read successfully
+1
+lc_shell> write_lib avsdpll -f db -o avsdpll.db
+Wrote the 'avsdpll' library to '/home/devipriya/VSDBabySoC/src/lib/avsdpll.db' successfully
+1
+lc_shell> 
+Segmentation fault encountered. (Bad read from 0x2ac)
+
+Stack trace for crashing thread
+-------------------------------
+SNPSee_72fe6ee5e6adf88ac107a01d196ffb8ed40842348ffb0f8b+36
+SNPSee_9ea8dbbd5e74784445edf9ed12a0bc4777b489dcaefdb88f6aa47f4097fccf5e+156
+SNPSee_9ea8dbbd5e74784484d3cce2fced02c05a3783bc3b9f8fad49ba3bacacc1ac73ecf347a38534d06f+2085
+SNPSee_3da1e8e388eef22c4cad96049bb507e323902e731626b6f85a1de23e01dcfb84+988
+_L_unlock_13+52
+SNPSee_6e69fbe5cd64cca1c6703629b1e895f8+7
+SNPSee_d37906b5b637f25b+18
+SNPSee_5d373cd896410e630e5be4cb01b4f045+1452
+SNPSee_84819e9227b2e0aa9cae34dc8be3b8a5cd8f264d30f37d0c6a8e358e8cb885004984e24a8c4868b7af29ce1919d3f9852683413c29440db5024a1d284b194ff1+130
+SNPSee_81260d5446b04a0b521622ffec18badce443b967c009f82c+122
+SNPSee_e52978fb95288b35702010462a2fb7521b19e6c7de02e749f68bb351c5fdf77d77dcb6d7ca3d86dfab86a645dee82a58b2bd32436fe9252678dfa79a3e0c83bf+138
+SNPSee_b81f4656f0d7d3ca1b0bca755b60caea2cb50375ef5e9df280c2a7ba1e2ca19f7750e3d580600edd04a01dc4363d697fcd6b18c4d0ab558c+706
+SNPSee_b3a63ca9beb66366a2beecdfa325f5f850e37c16b964335ba934f8a7afefeaf1+793
+main+4294
+__libc_start_main+245
+SNPSee_d06eed713327be76+41
+
+A detailed stack trace has been captured in /home/devipriya/VSDBabySoC/src/lib/Synopsys_stack_trace_20183.txt.
+
+The tool has just encountered a fatal error:
+
+If you encountered this fatal error when using the most recent
+Synopsys release, submit the above stack trace and a test case that
+reproduces the problem to the Synopsys Support Center by using
+Enter A Call at http://solvnet.synopsys.com/EnterACall.
+
+* For information about the latest software releases, go to the Synopsys
+  SolvNet Release Library at http://solvnet.synopsys.com/ReleaseLibrary.
+
+* For information about required Operating System patches, go to
+  http://www.synopsys.com/support
+
+
+Fatal: Internal system error, cannot recover.
+Error code=11
+CPU time=6
+
+Release = 'S-2021.06-SP5'  Architecture = 'linux64'  Program = 'Library Compiler'
+Exec = '/home/skandha/Tools_SNPS/Products/lc/S-2021.06-SP5/linux64/lc/bin/lc2_shell_exec'
+
+'134701541 159494168 139802248197680 153386247 153367810 153350428 165507698 57263338 51641994 49842466 132793017 15897200 139802115814741 15889086'
